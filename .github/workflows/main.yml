@@ -14,4 +14,4 @@ jobs:
           - name: Instalação curl
             run: apk add curl
           - name: Executando curl
-            run: curl https://wwww.google.com
+            run: curl https://www.google.com
