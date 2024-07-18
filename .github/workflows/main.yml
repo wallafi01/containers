@@ -8,7 +8,7 @@ jobs:
           image: python:3.10.14-alpine3.20
         steps:
           - name: Checkout
-            run: actions/checkout@v4
+            uses: actions/checkout@v4
           - name: Verificar versão do python
             run: python3 --version
           - name: Instalação curl
