@@ -1,0 +1,14 @@
+name: Teste Container
+on: 
+    workflow_dispatch:  
+jobs:
+    build-test:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Execução do Runner
+            run: cat /etc/os-release
+          - name: Execução no container
+            uses: docker://alpine:latest
+            with:
+              entrypoint: cat 
+              args: /etc/os-release
